@@ -1,0 +1,9 @@
+{
+  "ResponseMessage": {
+    "EnValues": {
+      "99": "Success",
+      "100": "Fail",
+      "101": "Request Timeout"
+    }
+  }
+}
