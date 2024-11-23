@@ -16,10 +16,10 @@ public sealed class TemplateInstance : BaseModel
     public TemplateData? Data { get; set; }
     
     [Column("person_id")]
-    public string PersonId { get; set; } = null!;
+    public Guid PersonId { get; set; }
     public Model.Person Person { get; set; } = null!;
     
     [Column("template_id")]
-    public string TemplateId { get; set; } = null!;
+    public Guid TemplateId { get; set; }
     public Model.Template Template { get; set; } = null!;
 }

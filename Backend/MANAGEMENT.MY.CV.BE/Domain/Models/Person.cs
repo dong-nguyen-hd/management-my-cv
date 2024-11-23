@@ -30,7 +30,7 @@ public sealed class Person : BaseModel
     public MyEnum.Gender Gender { get; set; }
 
     [Column("account_id")]
-    public string AccountId { get; set; } = null!;
+    public Guid AccountId { get; set; }
     public HashSet<Model.Company>? Companies { get; set; }
     public HashSet<Model.TemplateInstance>? TemplateInstances { get; set; }
     public HashSet<Model.Reference>? References { get; set; }

@@ -21,7 +21,7 @@ public sealed class Company : BaseModel
     public DateOnly? EndDate { get; set; }
 
     [Column("person_id")]
-    public string PersonId { get; set; } = null!;
+    public Guid PersonId { get; set; }
     public Model.Person Person { get; set; } = null!;
     public HashSet<Model.WorkHistory>? WorkHistories { get; set; }
 }

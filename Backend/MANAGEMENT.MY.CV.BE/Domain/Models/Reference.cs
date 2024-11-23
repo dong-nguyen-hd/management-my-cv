@@ -21,6 +21,6 @@ public sealed class Reference : BaseModel
     public string? Phone { get; set; }
 
     [Column("person_id")]
-    public string PersonId { get; set; } = null!;
+    public Guid PersonId { get; set; }
     public Model.Person Person { get; set; } = null!;
 }

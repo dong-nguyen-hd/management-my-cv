@@ -30,6 +30,6 @@ public sealed class WorkHistory :BaseModel
     public DateOnly? EndDate { get; set; }
     
     [Column("company_id")]
-    public string CompanyId { get; set; } = null!;
+    public Guid CompanyId { get; set; }
     public Model.Company Company { get; set; } = null!;
 }

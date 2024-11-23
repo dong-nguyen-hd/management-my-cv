@@ -15,6 +15,6 @@ public sealed class Keyword : BaseModel
     public float Weight { get; set; }
 
     [Column("category_id")]
-    public string CategoryId { get; set; } = null!;
+    public Guid CategoryId { get; set; }
     public Model.Category Category { get; set; } = null!;
 }

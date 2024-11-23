@@ -18,6 +18,6 @@ public sealed class Token : BaseModel
     public string? UserAgent { get; set; }
     
     [Column("account_id")]
-    public string AccountId { get; set; } = null!;
+    public Guid AccountId { get; set; }
     public Model.Account Account { get; set; } = null!;
 }

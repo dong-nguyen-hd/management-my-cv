@@ -15,6 +15,6 @@ public sealed class SocialNetwork : BaseModel
     public string? Icon { get; set; }
     
     [Column("person_id")]
-    public string PersonId { get; set; } = null!;
+    public Guid PersonId { get; set; }
     public Model.Person Person { get; set; } = null!;
 }
